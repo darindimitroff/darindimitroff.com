@@ -1,0 +1,52 @@
+  <footer class="center grey">
+    <div>
+      <p>
+        <a href="#" class="js-night text-decoration-none" title="Toggle night mode" style="vertical-align: -6%">😎</a> 2016 Darin Dimitroff.
+        Work in progress.
+      </p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
+
+<script>
+  $( document ).ready(function() {
+    $('.js-night').on('click', function(){
+      event.preventDefault();
+      $('html').toggleClass('night');
+      $(this).html($(this).html() == '😎' ? '🤓' : '😎');
+    });
+  });
+</script>
+
+<script>$(document).ready(function(){
+    var previousScroll = 0;
+    $(window).scroll(function(){
+      var currentScroll = $(this).scrollTop();
+
+      if (currentScroll > 10 && currentScroll < $(document).height() - $(window).height()){
+
+        if (currentScroll > previousScroll){
+          window.setTimeout(hideNav, 50);
+
+        } if (currentScroll < (previousScroll - 40)) {
+          window.setTimeout(showNav, 50);
+        }
+
+        previousScroll = currentScroll;
+      }
+      if (currentScroll < 1) {
+          window.setTimeout(top, 50);
+        }
+    });
+    function hideNav() {
+      $("nav").removeClass("drop").addClass("lift");
+    }
+    function showNav() {
+      $("nav").removeClass("lift").addClass("drop");
+    }
+    function top() {
+      $("nav").removeClass("lift").removeClass("drop");
+    }
+  });</script>

@@ -1,0 +1,31 @@
+@mixin phablet
+{
+    @media (min-width: 400px)
+    {
+        @content;
+    }
+}
+
+@mixin tablet
+{
+    @media (min-width: 750px)
+    {
+        @content;
+    }
+}
+
+@mixin desktop
+{
+    @media(min-width: 1000px)
+    {
+        @content;
+    }
+}
+
+@mixin desktopHD
+{
+    @media (min-width: 1600px)
+    {
+        @content;
+    }
+}

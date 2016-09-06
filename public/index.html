@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+
+  <meta charset="utf-8">
+  <title>Darin Dimitroff</title>
+  <meta name="description" content="Inter-disciplinary digital designer living in Sofia.">
+  <meta name="author" content="Darin Dimitroff">
+  <meta property="og:site_name" content="Darin Dimitroff"/>
+
+  <meta property="og:title" content="Darin Dimitroff" />
+  <meta property="og:description" content="Inter-disciplinary digital designer living in Sofia." />
+  <meta property="og:image" content="/images/me.jpg" />
+  <meta property="og:type" content="website" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <base href="http://darindimitroff.com">
+  <title> Darin Dimitroff | Darin Dimitroff</title>
+  <link rel="canonical" href="http://darindimitroff.com">
+
+  <link href="http://http://darindimitroff.com/index.xml" rel="alternate" type="application/rss+xml" title="Darin Dimitroff" />
+
+  <link rel="stylesheet" type="text/css" href="http://darindimitroff.com/css/stylesheet.css" type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+
+  <link rel="apple-touch-icon" href="images/thumb.png">
+</head>
+
+<body lang="en">
+  <nav class="caps fixed top-0 left-0 right-0 shadow px2 bg-fff transition-bouncy">
+  <ul class="list-reset bold max-width-2 mx-auto">
+
+    <li>
+      <a class="text-decoration-none inline-block py2 mr2 left states transition-fast transition-slow" href="http://darindimitroff.com/">about</a>
+    </li>
+
+    <li>
+      <a class="text-decoration-none inline-block py2 mr2 left states transition-fast transition-slow" href="https://medium.com/@deezel" target="blank">writing</a>
+    </li>
+
+  </ul>
+</nav>
+
+
+  <div class="px2 max-width-3 mx-auto">
+
+<div class="mt4 mx-auto max-width-2 overflow-hidden longform fff">
+
+	<h1 class="h1 mt3 bold">Hey, I'm Darin</h1>
+	<p class="h3 bold mb3">A product designer focused on building systems</p>
+
+	<p>I'm an inter-disciplinary digital designer living in Sofia. Currently I work at <a href="http://thecrazyones.agency">The Crazy Ones</a>, a product design shop I co-founded with my partner <a href="http://kalinaivanova.com">Kalina</a>. Through the years
+	I've done work for early stage startups as well as major corporations. Before I switched to product, I used to work in advertising. I try to spend more time away from technology and digital distractions.</p>
+
+	<h2 class="h2 bold grey">I'm currently working on</h2>
+
+	<ul>
+		<li>a language testing platform used by NATO and the American Army</li>
+		<li>a digital health and fitness platform</li>
+		<li>an online publication covering yoga</li>
+		<li>a revolutionary T-shirt's website and online store</li>
+		<li>NDA</li>
+		<li>NDA</li>
+		<li>NDA</li>
+	</ul>
+
+	<h2 class="h2 bold grey">I'm really passionate about</h2>
+	<ul>
+		<li>large scale design systems</li>
+		<li>content-driven design</li>
+		<li>responsive typography for screens</li>
+		<li>designing with code</li>
+		<li>microinteraction prototyping</li>
+		<li>atomic CSS</li>
+	</ul>
+
+	<h2 class="h2 bold grey">I'm also having fun</h2>
+
+	<ul>
+		<li>exploring product improvement ideas on <a href="http://www.improved.design" target="blank">improved.design</a></li>
+		<li>designing a better battery charger LED notification standard</li>
+		<li>building the <strong>ultimate</strong> responsive typographic scale</li>
+	</ul>
+
+	<h2 class="h2 bold grey">I'm currently trying to</h2>
+
+	<ul>
+		<li>learn the basics of Swift</li>
+		<li>improve my SVG animation skills (particularly GSAP)</li>
+		<li>dive deeper into Git</li>
+		<li>wrap my head around advanced color theory</li>
+	</ul>
+
+  <p>My site is never finished and I try not to spend too much time on it. Follow me on <a href="https://twitter.com/deezel" target="blank" class="twitter">Twitter</a>, <a href="https://medium.com/@deezel" target="blank" class="medium">Medium</a>, <a href="https://www.instagram.com/ddimitrovd/" target="blank" class="instagram">Instagram</a> and <a href="https://dribbble.com/deezel" target="blank" class="dribbble">Dribbble</a> to catch up with what I'm up to.</p>
+
+</div>
+  <footer class="center grey">
+    <div>
+      <p>
+        <a href="#" class="js-night text-decoration-none" title="Toggle night mode" style="vertical-align: -6%">😎</a> 2016 Darin Dimitroff.
+        Work in progress.
+      </p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
+
+<script>
+  $( document ).ready(function() {
+    $('.js-night').on('click', function(){
+      event.preventDefault();
+      $('html').toggleClass('night');
+      $(this).html($(this).html() == '😎' ? '🤓' : '😎');
+    });
+  });
+</script>
+
+<script>$(document).ready(function(){
+    var previousScroll = 0;
+    $(window).scroll(function(){
+      var currentScroll = $(this).scrollTop();
+
+      if (currentScroll > 10 && currentScroll < $(document).height() - $(window).height()){
+
+        if (currentScroll > previousScroll){
+          window.setTimeout(hideNav, 50);
+
+        } if (currentScroll < (previousScroll - 40)) {
+          window.setTimeout(showNav, 50);
+        }
+
+        previousScroll = currentScroll;
+      }
+      if (currentScroll < 1) {
+          window.setTimeout(top, 50);
+        }
+    });
+    function hideNav() {
+      $("nav").removeClass("drop").addClass("lift");
+    }
+    function showNav() {
+      $("nav").removeClass("lift").addClass("drop");
+    }
+    function top() {
+      $("nav").removeClass("lift").removeClass("drop");
+    }
+  });</script>
+

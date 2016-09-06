@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+
+  <meta charset="utf-8">
+  <title>Darin Dimitroff</title>
+  <meta name="description" content="Inter-disciplinary digital designer living in Sofia.">
+  <meta name="author" content="Darin Dimitroff">
+  <meta property="og:site_name" content="Darin Dimitroff"/>
+
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:description" content="Inter-disciplinary digital designer living in Sofia." />
+  <meta property="og:image" content="/images/me.jpg" />
+  <meta property="og:type" content="website" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <base href="{{.Site.BaseURL}}">
+  <title> {{ .Title }} | Darin Dimitroff</title>
+  <link rel="canonical" href="{{.Site.BaseURL}}">
+
+  <link href="http://{{.Site.BaseURL}}/index.xml" rel="alternate" type="application/rss+xml" title="Darin Dimitroff" />
+
+  <link rel="stylesheet" type="text/css" href="{{.Site.BaseURL}}/css/stylesheet.css" type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+
+  <link rel="apple-touch-icon" href="images/thumb.png">
+</head>
+
+<body lang="en">
+  {{ partial "nav" . }}
+
+  <div class="px2 max-width-3 mx-auto">

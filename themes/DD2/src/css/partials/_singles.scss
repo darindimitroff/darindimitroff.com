@@ -1,0 +1,61 @@
+*
+{
+    box-sizing: border-box;
+}
+a
+{
+    color: inherit;
+}
+::selection
+{
+    color: darken($black, .3);
+    background-color: $highlight;
+}
+
+.longform
+{
+    a
+    {
+        padding: .1rem 0;
+        text-decoration: none;
+        transition: $hover-transition;
+
+        background-color: rgba($grey, .2);
+        &:hover
+        {
+            color: darken($black, 4);
+            background-color: $highlight;
+            &:active
+            {
+                opacity: .4;
+            }
+        }
+    }
+    ol, ul { list-style: none; }
+
+    li {
+      &::before {
+        content: "•";
+        color: $grey;
+        margin-right: .5rem;
+        vertical-align: baseline;
+      }
+    }
+    .twitter:hover { background: #55acee !important; color: white; }
+
+    .medium:hover { background: #5cffa0 !important; color: white; }
+
+    .dribbble:hover { background: #ea4c89 !important; color: white; }
+
+    .instagram:hover { background: linear-gradient(to right, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80); color: white; }
+}
+
+.drop
+{
+  transform: translateY(0);
+}
+
+.lift
+{
+  transform: translateY(-100%);
+}

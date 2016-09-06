@@ -1,0 +1,34 @@
+//VARIABLES
+$black: #1E2338;
+.black { color: $black; }
+.bg-black { background-color: $black; }
+
+$white: #F5F5F7;
+.white { color: $white; }
+.bg-white { background-color: $white; }
+
+.bg-fff { background-color: #fff }
+
+$grey: #9A9DAB;
+.grey { color: $grey; }
+.bg-grey { background-color: $grey; }
+
+$smoke: #6F7485;
+.smoke { color: $smoke; }
+.bg-smoke { background-color: $smoke; }
+
+$highlight: rgba(254, 255, 204, 1);
+.highlight { background-color: $highlight; }
+
+.states
+{
+  -webkit-tap-highlight-color: $highlight;
+  &:active {
+    opacity: .35;
+  }
+  @include desktop {
+    &:hover {
+      opacity: .65;
+    }
+  }
+}

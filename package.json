@@ -1,0 +1,34 @@
+{
+  "name": "darindimitroff.com",
+  "version": "2.0.0",
+  "description": "My personal website.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "basscss": "^8.0.1",
+    "basscss-base-reset": "^2.0.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-gzip": "^1.3.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "livereload": "^0.4.1",
+    "postcss": "^5.0.21",
+    "postcss-cssnext": "^2.5.2",
+    "postcss-font-magician": "^1.4.0",
+    "postcss-scss": "^0.1.7",
+    "precss": "^1.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "localhost:1313"
+  },
+  "author": "Darin Dimitroff",
+  "license": "MIT"
+}

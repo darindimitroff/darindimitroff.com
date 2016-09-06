@@ -1,0 +1,39 @@
+.night
+{
+  nav {
+    background-color: darken($black, 3);
+  }
+  body {
+    background-color: $black;
+    color: $white;
+  }
+  ::selection {
+    background-color: rgba($grey, .3);
+    color: inherit;
+  }
+  .grey {
+    color: $smoke;
+  }
+  .longform
+  {
+      a
+      {
+          background-color: rgba($grey, .4);
+          &:hover
+          {
+              color: $white;
+              background-color: $grey;
+              &:active
+              {
+                  opacity: .4;
+              }
+          }
+      }
+      li {
+        &::before {
+          color: $smoke;
+        }
+      }
+  }
+
+}

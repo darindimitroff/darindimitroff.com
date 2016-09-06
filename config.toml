@@ -1,0 +1,8 @@
+baseurl = "http://darindimitroff.com"
+languageCode = "en-us"
+title = "Darin Dimitroff"
+theme = "DD2"
+canonifyurls = "true"
+
+[Params]
+  Author = "Darin Dimitroff"

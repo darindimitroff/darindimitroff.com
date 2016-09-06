@@ -1,0 +1,8 @@
+$hover-transition: all 100ms ease;
+.transition-fast { transition: $hover-transition; }
+
+$animation-transition: background-color 500ms cubic-bezier(.5, .1, 0, 1), opacity 100ms ease;
+.transition-slow { transition: $animation-transition; }
+
+$bouncy-transition: all 300ms cubic-bezier(.5, .1, 0, 1.2);
+.transition-bouncy { transition: $bouncy-transition; }

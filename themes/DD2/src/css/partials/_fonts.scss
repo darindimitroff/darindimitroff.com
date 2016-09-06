@@ -1,0 +1,36 @@
+@font-face
+{
+    font-family: 'Nitti Grotesk';
+    font-weight: normal;
+    font-style: normal;
+
+    src:
+      url('/fonts/NittiGrotesk-Normal.eot'),
+      url('/fonts/NittiGrotesk-Normal.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/NittiGrotesk-Normal.woff2') format('woff2'),
+      url('/fonts/NittiGrotesk-Normal.woff') format('woff'),
+      url('/fonts/NittiGrotesk-Normal.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Nitti Grotesk';
+    font-weight: bold;
+    font-style: normal;
+
+    src:
+      url('/fonts/NittiGrotesk-Bold.eot'),
+      url('/fonts/NittiGrotesk-Bold.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/NittiGrotesk-Bold.woff2') format('woff2'),
+      url('/fonts/NittiGrotesk-Bold.woff') format('woff'),
+      url('/fonts/NittiGrotesk-Bold.ttf') format('truetype');
+}
+
+@mixin nitti {
+  font-family: 'Nitti Grotesk', -apple-system-body, Helvetica-Neue, Helvetica, Arial sans-serif;
+}
+
+@mixin nitti-bold {
+  font-family: 'Nitti Grotesk', -apple-system-body, Helvetica-Neue, Helvetica, Arial sans-serif;
+  font-weight: bold;
+}
