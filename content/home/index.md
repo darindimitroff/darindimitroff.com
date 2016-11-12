@@ -1,7 +1,6 @@
 +++
 title = "Darin Dimitroff"
 tags = ["_home"]
-
 +++
 
 # Hey, I'm Darin
