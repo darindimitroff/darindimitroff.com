@@ -6,8 +6,9 @@ $black: #1E2338;
 $white: #F5F5F7;
 .white { color: $white; }
 .bg-white { background-color: $white; }
+.bg-white-95 { background-color: rgba($white, .95); }
 
-.bg-fff { background-color: #fff }
+.bg-fff { background-color: #fff !important }
 
 $grey: #9A9DAB;
 .grey { color: $grey; }
@@ -19,6 +20,8 @@ $smoke: #6F7485;
 
 $highlight: rgba(254, 255, 204, 1);
 .highlight { background-color: $highlight; }
+
+.bgn { background-color: transparent }
 
 .states
 {

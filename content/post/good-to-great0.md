@@ -1,6 +1,6 @@
 +++
 date = "2016-05-07T21:36:33+03:00"
-title = "good to great"
+title = "maranchi is th new norm"
 +++
 
 I read **Good to Great in January 2016**. An awesome read sharing detailed analysis on how good companies became great.

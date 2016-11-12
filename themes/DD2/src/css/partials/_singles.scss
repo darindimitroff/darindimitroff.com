@@ -31,6 +31,9 @@ a
             }
         }
     }
+    img {
+      @extend .fit;
+    }
     ol, ul { list-style: none; }
 
     li {
@@ -41,6 +44,9 @@ a
         vertical-align: baseline;
       }
     }
+
+    .spacefarm:hover { background: #5538fa !important; color: white; }
+
     .twitter:hover { background: #55acee !important; color: white; }
 
     .medium:hover { background: #5cffa0 !important; color: white; }
@@ -58,4 +64,10 @@ a
 .lift
 {
   transform: translateY(-100%);
+}
+
+.arrow:after {
+  content: "→";
+  padding-left: .2em;
+  vertical-align: -.035em;
 }

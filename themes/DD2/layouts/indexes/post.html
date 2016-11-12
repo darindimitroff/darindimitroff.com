@@ -1,0 +1,13 @@
+{{ partial "header" . }}
+{{ partial "nav" . }}
+<div class="mt4 mx-auto max-width-2 overflow-hidden fff pt2">
+  <h1 class="h1 mb2 black">Blog</h1>
+  <ul class="list-reset mxn1">
+    {{ range .Data.Pages }}
+        <div class="mb2 px1 flex">
+          {{ .Render "li" }}
+        </div>
+    {{end}}
+  </ul>
+</div>
+{{ partial "footer" . }}

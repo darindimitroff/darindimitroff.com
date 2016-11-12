@@ -1,0 +1,23 @@
+{{ partial "header.html" . }}
+
+<body>
+	{{ partial "nav.html" . }}
+	<div class="mt4 mx-auto max-width-2 overflow-hidden longform fff">
+
+		<h1>{{ .Title }}</h1>
+    {{ .Description }}
+
+    {{ .Content }}
+
+
+		{{ .Date.Format "Monday, January 2 2006" }}
+
+    <p>Read in {{ .ReadingTime }} {{ if gt .ReadingTime 1 }}{{ "minute" | pluralize }}{{ else }}minute{{ end }}</p>
+
+		<hr>
+		<strong>Categories</strong>
+
+		<hr>
+	</div>
+
+	{{ partial "footer.html" . }}
